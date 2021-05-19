@@ -5,7 +5,7 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 
 RUN apt-get update \ 
 && apt-get upgrade -y \ 
-&& apt-get install -y sudo cron nano zip unzip \ 
+&& apt-get install -y sudo curl wget git cron nano zip unzip \ 
 && curl -sL https://deb.nodesource.com/setup_14.x | bash \
 && apt-get install -y nodejs \
 && chmod uga+x /usr/local/bin/install-php-extensions \
