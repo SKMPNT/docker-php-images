@@ -8,7 +8,7 @@ RUN apt-get update \
 && apt-get install -y sudo curl wget git cron nano zip unzip \ 
 && chmod uga+x /usr/local/bin/install-php-extensions \
 && sync \ 
-&& install-php-extensions mysqli pdo pdo_mysql zip gd bcmath intl gmp imagick exif opcache redis @composer \ 
+&& install-php-extensions mysqli pdo pdo_mysql zip gd bcmath intl gmp imagick exif opcache redis imap apcu @composer \ 
 && a2enmod rewrite \
 && a2enmod proxy \
 && a2enmod proxy_http
