@@ -1,4 +1,4 @@
-ARG PHP_VERSION=5.5
+ARG PHP_VERSION=4.4
 FROM php:${PHP_VERSION}-apache
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
