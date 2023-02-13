@@ -10,6 +10,7 @@ RUN apt-get update \
 && sync \ 
 && install-php-extensions mysqli pdo pdo_mysql zip gd bcmath mbstring intl gmp imagick exif opcache @composer \ 
 && a2enmod rewrite \
+&& a2enmod remoteip \
 && a2enmod proxy \
 && a2enmod proxy_http
 
